@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import styles from './styles.module.css'
+
 function Home () {
   const [id, setId] = useState('')
 
@@ -9,12 +11,15 @@ function Home () {
   }
 
   return (
-    <main>
-      <h1>FedeChat</h1>
-      <input type='text' placeholder='Write a id' onChange={handleChange} />
-      <Link to={`/chat/${id}`}>
-        <button>Go to chat</button>
-      </Link>
+    <main className={styles.home}>
+      <div className={styles.information}>
+        <h1>Secret lovers chat</h1>
+        <p>Share the best conversations with your secret lover</p>
+        <input type='text' placeholder='Write a id' onChange={handleChange} />
+        <Link to={`/chat/${id}`}>
+          <button>Go to chat</button>
+        </Link>
+      </div>
     </main>
   )
 }

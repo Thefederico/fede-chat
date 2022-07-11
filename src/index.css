@@ -1,6 +1,10 @@
+:root {
+  --bg-color: #121f3d;
+}
+
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -9,7 +13,11 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+}
+
+ol,
+ul {
+  list-style: none;
 }
