@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import socketIOClient from 'socket.io-client'
 
 const NEW_CHAT_MESSAGE = 'newMessage'
-const SOCKET_SERVER = 'https://secret-lovers-backend.herokuapp.com/'
+const SOCKET_SERVER = 'https://secret-lovers.onrender.com'
 
 function useChat (chatId) {
   const [messages, setMeassages] = useState([])
